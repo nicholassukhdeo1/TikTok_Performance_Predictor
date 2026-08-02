@@ -41,5 +41,17 @@ videos = []
 for block in blocks:
     videos.append(parse_block(block))
 
-print(len(videos))
-print(videos[0])
+clean_videos = []
+for video in videos:
+    clean_videos.append({
+        "date": video["Date"],
+        "likes": int(video["Like(s)"]),
+        "views": int(video["Views"]),
+        "sound": video["Sound"],
+    })
+
+print(clean_videos[0])
+
+
+# print(len(videos))
+# print(videos[0])
