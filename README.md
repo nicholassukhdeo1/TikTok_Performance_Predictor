@@ -1,6 +1,6 @@
 # TikTok_Performance_Predictor
 
-Project coded in Python: using pandas to read TikTok Performance Data, scikit-learn to train/test model making predictions, matplotlib to plot the results
+Project coded in Python: using pandas to read TikTok Performance Data, scikit-learn to train/test model making predictions, matplotlib to plot the results...
 
 # Why I built this:
 There's so much information circulating about the importance of TikTok post times. But, something that didn't circulate was a general sense of skepticism for the importance of this variable. Because, recall that there isn't any publicly available information from TikTok about its algorithm. Therefore, any claim about post times is speculative, giving me a perfect reason to test these claims on my own.
