@@ -41,6 +41,9 @@ videos = []
 for block in blocks:
     videos.append(parse_block(block))
 
+
+# basic data cleaning, we're taking note of only
+# the important info in our video dictionary
 clean_videos = []
 for video in videos:
     clean_videos.append({
@@ -54,8 +57,14 @@ print(clean_videos[0])
 
 import pandas as pd
 
+
+# turns my list of dictionaries into a real table
 df = pd.DataFrame(clean_videos)
+# wrties that table to a CSV file, index prevents a useless extra row
+# from being made
 df.to_csv("tiktok_data.csv", index=False)
+
+#df head prints the 4-column table w 5 rows
 print(df.head())
 
 
