@@ -52,6 +52,12 @@ for video in videos:
 
 print(clean_videos[0])
 
+import pandas as pd
+
+df = pd.DataFrame(clean_videos)
+df.to_csv("tiktok_data.csv", index=False)
+print(df.head())
+
 
 # print(len(videos))
 # print(videos[0])
